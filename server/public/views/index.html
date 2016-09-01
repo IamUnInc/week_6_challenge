@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Heros List</title>
+    <script src="/vendor/angular.min.js"></script>
+    <script src="/scripts/clientapp.js"></script>
+    <script type="text/javascript" src="/vendor/angular-route.min.js"></script>
+    <script src="/scripts/controllers/newHeroController.js"></script>
+    <link rel="stylesheet" href="/styles/stylesheet.css" />
+  </head>
+  <body ng-app="heroApp">
+    <main>
+      <h1>Heros on Heros on Heros</h1>
+      <!-- Submit a book -->
+      <section id="heroSubmission">
+        <h2>Submit a Hero</h2>
+
+        <div ng-include="'/views/nav.html'"></div>
+
+        <div ng-view></main>
+    </main>
+  </body>
+</html>
